@@ -104,11 +104,11 @@
 }
 .card .info #sobre {
   flex: 2;
-  padding: 0 30px;
+  padding: 10px 0;
 }
 .card .info #sobre h1 {
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   color: #6691c9;
 }
 .card .info #sobre p {

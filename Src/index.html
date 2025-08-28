@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/sass/style.css">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Fim Bootstrap Icons-->
+    <title>Currículo - Heitor Araujo</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho verde -->
+    <header class="header">
+        <div class="logo">
+            <h2>HEITOR ARAUJO</h2>
+            <p>Desenvolvedor Web</p>
+        </div>
+
+        <nav class="nav-header">
+            <ul>
+                <li><a href="https://github.com/Zelbato"><i class="bi bi-github"></i></a></li>
+                <li><a href="mailto:heitorzelbato@gmail.com"><i class="bi bi-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/heitor-zelbato-9693a92a0/"><i class="bi bi-linkedin"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Card central -->
+    <main class="main">
+        <section class="card">
+            <div class="foto">
+                <img src="assets/img/ft-5.jpg" alt="foto-perfil">
+            </div>
+
+            <div class="info">
+                <!-- Sessões que mudam -->
+                <div class="conteudo ativo" id="info">
+                    <h3>Olá & Bem-vindo</h3>
+                    <h1>EU SOU <span>HEITOR ARAUJO</span></h1>
+                    <p>Desenvolvedor Web & Aluno Ads</p>
+                    <ul class="dados">
+                        <li><strong>Idade:</strong> 19</li>
+                        <li><strong>Endereço:</strong> Santa Fé do Sul, SP</li>
+                        <!-- <li><strong>Email:</strong> heitorzelbato@gmail.com</li> -->
+                        <li><strong>Telefone:</strong> +55 17 98809-6975</li>
+                        <li><strong>Website:</strong> github.com/Zelbato</li>
+                    </ul>
+                </div>
+
+                <div class="conteudo" id="sobre">
+                    <h1>Sobre mim</h1>
+                    <p>Meu nome é Heitor, tenho 19 anos sou formado como Técnico de Informatica para internet pela Etec
+                        de Santa Fé do Sul e cursando Análise e Desenvolvimento de Sistemas pela UNIFUNEC.
+                    </p>
+                    <p>
+                        Comecei a estudar programação em 2022 e, apesar dos desafios iniciais, obtive resultados com
+                        projetos desenvolvidos. Agora, me dedico a aprender e explorar novas linguagens</p>
+                </div>
+
+                <div class="conteudo" id="hobbies">
+                    <h1>Hobbies</h1>
+
+                    <div class="hobby-tabs">
+                        <button class="hobby-tab active" data-tab="gaming">Jogos</button>
+                        <button class="hobby-tab" data-tab="investments">Investimentos</button>
+                        <button class="hobby-tab" data-tab="friends">Amigos</button>
+                    </div>
+
+                    <div class="hobby-content active" id="gaming">
+                        <h3>Jogos</h3>
+                        <p>Gosto de jogos de PC voltados a RPGs e estratégia. Além de RPGs de Mesa como Tormenta e D&D.
+                        </p>
+                    </div>
+
+                    <div class="hobby-content" id="investments">
+                        <h3>Investimentos</h3>
+                        <p>Estudo sobre investimentos, ações, ETFs, FILLs e estratégias de renda extra.</p>
+                    </div>
+
+                    <div class="hobby-content" id="friends">
+                        <h3>Amigos</h3>
+                        <p>Gosto de sair com os amigos, jogar partidas de videogame,                         participar de conversas animadas sobre filmes, séries e jogos.</p>
+
+
+                    </div>
+                </div>
+
+                <div class="conteudo" id="contato">
+                    <div class="form-container">
+                        <h1>Contato</h1>
+                        <form class="form-box" action="">
+
+                            <div class="input-group">
+                                <input type="text" id="nome" name="nome" placeholder="Nome">
+
+                                <input type="email" id="email" name="email" placeholder="Email">
+                            </div>
+
+                            <!-- <div class="input-group">
+
+                            </div> -->
+
+                            <div class="input-group">
+                                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Mensagem..."></textarea>
+                            </div>
+
+                            <button type="submit">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Rodapé com ícones -->
+                <div class="menu-icones">
+                    <ul>
+                        <li><a href="#" data-target="info"><i class="bi bi-person"></i></a></li>
+                        <li><a href="#" data-target="sobre"><i class="bi bi-book"></i></a></li>
+                        <li><a href="#" data-target="hobbies"><i class="bi bi-controller"></i></a></li>
+                        <li><a href="#" data-target="contato"><i class="bi bi-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/Js/script.js"></script>
+</body>
+
+</html>

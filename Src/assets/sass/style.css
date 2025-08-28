@@ -151,7 +151,7 @@
   width: 100%;
   padding: 10px;
   background-color: #0b2b54;
-  color: white;
+  color: #fff;
   font-weight: bold;
   border: none;
   border-radius: 5px;
@@ -174,14 +174,14 @@
 .card .info #hobbies .hobby-tab {
   padding: 8px 16px;
   cursor: pointer;
-  border: 1px solid #206ab8;
+  border: 1px solid #0b2b54;
   border-radius: 5px;
   background-color: #f3f6f9;
-  color: #206ab8;
+  color: #6691c9;
   transition: background-color 0.3s, color 0.3s;
 }
 .card .info #hobbies .hobby-tab.active {
-  background-color: #206ab8;
+  background-color: #0b2b54;
   color: #fff;
 }
 .card .info #hobbies .hobby-content {

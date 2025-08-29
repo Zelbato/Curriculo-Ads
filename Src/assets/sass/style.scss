@@ -23,6 +23,7 @@
       font-size: 28px;
       font-weight: bold;
     }
+
     p {
       font-size: 16px;
       font-weight: 400;
@@ -56,8 +57,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -200px; /* Faz o card subir sobre o cabeçalho */
-  
+  margin-top: -200px;
+  /* Faz o card subir sobre o cabeçalho */
+
 }
 
 .card {
@@ -71,11 +73,12 @@
 
   .foto {
     flex: 1;
+
     img {
       width: 100%;
       height: 380px;
       object-fit: cover;
-        border-radius: 6px 0px 0px 6px;
+      border-radius: 6px 0px 0px 6px;
     }
   }
 
@@ -119,171 +122,174 @@
       }
     }
 
-    #sobre{
-    flex: 2;
-    padding:10px 0;
+    #sobre {
+      flex: 2;
+      padding: 10px 0;
 
-    h1{
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: $TextS;
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: $TextS;
+      }
+
+      p {
+        font-size: 18px;
+        color: $backgrondP;
+      }
     }
 
-    p {
-      font-size: 18px;
-      color: $backgrondP;
-    }
-}
+    #contato {
 
-#contato {
-
-    h1{
+      h1 {
         color: $TextS;
         font-size: 24px;
         margin-bottom: 5px;
-    }
+      }
 
-    .form-container {
+      .form-container {
         width: 100%;
         max-width: auto; // reduzido para caber no espaço
 
         .form-box {
-            flex-direction: column;
+          flex-direction: column;
+          display: flex;
+
+          .input-group {
+            gap: 10px;
             display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: row;
 
-            .input-group {
-                gap: 10px;
-                display: flex;
-                align-items:flex-start;
-                justify-content: flex-start;
-                flex-direction: row;
-
-                input, textarea {
-                    width: 100%;
-                    padding: 10px;
-                    margin-bottom: 10px;
-                    font-size: 14px;
-                    border-radius: 5px;
-                    border: 1px solid $borderW;
-                    box-sizing: border-box;
-                }
-
-                textarea {
-                    resize: vertical;
-                }
+            input,
+            textarea {
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 10px;
+              font-size: 14px;
+              border-radius: 5px;
+              border: 1px solid $borderW;
+              box-sizing: border-box;
             }
 
-            button {
-                width: 100%;
-                padding: 10px;
-                background-color: $backgrondP;
-                color: $TextW;
-                font-weight: bold;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: all .3s;
-
-                &:hover{
-                    background: $TextS;
-                }
+            textarea {
+              resize: vertical;
             }
+          }
+
+          button {
+            width: 100%;
+            padding: 10px;
+            background-color: $backgrondP;
+            color: $TextW;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+              background: $TextS;
+            }
+          }
         }
+      }
+
     }
 
-}
+    #hobbies {
 
-#hobbies{
-
-    h1{
+      h1 {
         color: $TextS;
         font-size: 24px;
         margin-bottom: 5px;
-    }
+      }
 
-    .hobby-tabs {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-}
+      .hobby-tabs {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+      }
 
-.hobby-tab {
-    padding: 8px 16px;
-    cursor: pointer;
-    border: 1px solid $TextP;
-    border-radius: 5px;
-    background-color: $backgrondW;
-    color: $TextS;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.hobby-tab.active {
-    background-color: $backgrondP;
-    color: $TextW;
-}
-
-.hobby-content {
-    display: none;
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: $backgrondHover;
-
-    h3{
+      .hobby-tab {
+        padding: 8px 16px;
+        cursor: pointer;
+        border: 1px solid $TextP;
+        border-radius: 5px;
+        background-color: $backgrondW;
         color: $TextS;
-        border-bottom: none;
-    }
-}
+        transition: background-color 0.3s, color 0.3s;
+      }
 
-.hobby-content.active {
-    display: block;
-}
-}
+      .hobby-tab.active {
+        background-color: $backgrondP;
+        color: $TextW;
+      }
+
+      .hobby-content {
+        display: none;
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: $backgrondHover;
+
+        h3 {
+          color: $TextS;
+          border-bottom: none;
+        }
+      }
+
+      .hobby-content.active {
+        display: block;
+      }
+    }
 
 
 
 
     .menu-icones {
-  margin-top: 20px;
-  position: fixed;
-  background: $backgrondP;
-//   padding: 15px 0;
+      margin-top: 20px;
+      position: fixed;
+      background: $backgrondP;
+      //   padding: 15px 0;
 
-  ul {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
-    list-style: none;
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+        list-style: none;
 
-    li {
-        background: $backgrondP;
-        padding: 15px 57px;
-        transition: all .3s;
+        a {
+          color: $TextW;
+          font-size: 25px;
+          transition: 0.3s;
 
-        &:hover{
-            background: $TextS;
-        }
-      a {
-        color: $TextW;
-        font-size: 25px;
-        transition: 0.3s;
+          &:hover {
+            color: $TextHover;
+          }
 
-        &:hover {
-          color: $TextHover;
+
+          li {
+            background: $backgrondP;
+            padding: 15px 57px;
+            transition: all .3s;
+
+            &:hover {
+              background: $TextS;
+            }
+          }
         }
       }
     }
-  }
-}
 
-/* Conteúdo dinâmico */
-.conteudo {
-  display: none;
+    /* Conteúdo dinâmico */
+    .conteudo {
+      display: none;
 
-  &.ativo {
-    display: block;
-  }
-}
+      &.ativo {
+        display: block;
+      }
+    }
 
   }
 }
